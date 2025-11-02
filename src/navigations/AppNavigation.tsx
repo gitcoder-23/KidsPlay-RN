@@ -6,10 +6,12 @@ import {
 } from '@react-navigation/stack';
 import Welcome from '../screens/welcome';
 import Login from '../screens/auth/Login';
+import Dashboard from '../screens/dashboard';
 
 export type AppNavigationStackParamList = {
   Welcome: undefined;
   Login: undefined;
+  Dashboard: undefined;
 };
 
 const Stack = createStackNavigator<AppNavigationStackParamList>();
@@ -46,6 +48,15 @@ const AppNavigation = () => {
                 ...myOptions,
                 headerShown: false,
                 title: 'Login',
+              })}
+            />
+            <Stack.Screen
+              name="Dashboard"
+              component={Dashboard}
+              options={() => ({
+                ...myOptions,
+                headerShown: false,
+                title: 'Dashboard',
               })}
             />
           </>
