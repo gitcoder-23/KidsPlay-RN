@@ -14,7 +14,7 @@ type loginType = {
   route: any;
 };
 
-const Login = ({ navigation, route }: loginType) => {
+const Login = ({ navigation }: loginType) => {
   const [email, setEmail] = useState<string>('');
   const [error, setError] = useState('');
 
