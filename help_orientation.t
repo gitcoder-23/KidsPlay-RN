@@ -5,6 +5,33 @@ https://github.com/wonday/react-native-orientation-locker
 https://stackoverflow.com/questions/67069672/react-native-orientation-is-not-working-locking-on-ios
 https://github.com/WrathChaos/react-native-portrait-locker-example
 
+In Xcode, with the KidzPlay target selected (as in your screenshot),
+go to Build Settings → scroll (or search) for
+“Objective-C Bridging Header” under Swift Compiler – General.
+
+You’ll see two rows — Debug and Release — both are currently empty.
+
+Double-click inside the Debug field (the empty cell on the right).
+A small popup editor will appear.
+
+Paste this path (depending on where your header file is located):
+
+✅ If your file is inside ios/KidzPlay/:
+$(PROJECT_DIR)/KidzPlay/KidzPlay-Bridging-Header.h
+
+⚠️ If it’s directly under ios/:
+$(PROJECT_DIR)/KidzPlay-Bridging-Header.h
+
+
+Hit Enter to confirm.
+
+Repeat the same for Release → paste the same path there.
+
+You should now see something like this:
+
+Debug:   $(PROJECT_DIR)/KidzPlay-Bridging-Header.h
+Release: $(PROJECT_DIR)/KidzPlay-Bridging-Header.h
+
 
 
 // URL for Expo
