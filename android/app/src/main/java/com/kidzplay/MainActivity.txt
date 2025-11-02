@@ -8,10 +8,6 @@ import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
 
-// ✅ Import the OrientationLocker package manually
-import android.content.Intent;
-import android.content.res.Configuration;
-
 class MainActivity : ReactActivity() {
 
   /**
@@ -32,16 +28,5 @@ class MainActivity : ReactActivity() {
   */
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(null)
-  }
-
-  /**
-   * Required for react-native-orientation-locker
-   * This notifies the JS side when orientation changes
-   */
-  override fun onConfigurationChanged(newConfig: Configuration) {
-    super.onConfigurationChanged(newConfig)
-    val intent = Intent("onConfigurationChanged")
-    intent.putExtra("newConfig", newConfig)
-    this.sendBroadcast(intent)
   }
 }
