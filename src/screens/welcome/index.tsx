@@ -10,7 +10,6 @@ import {
 import React, { useEffect, useState } from 'react';
 import { MaterialIcons } from '@react-native-vector-icons/material-icons';
 
-const logoImg = require('../../assets/images/kidzplay.png');
 const Height = Dimensions.get('window').height;
 type WelcomeType = {
   navigation: any;
@@ -41,7 +40,10 @@ const Welcome = ({ navigation }: WelcomeType) => {
 
   return (
     <View style={styles.mainContainer}>
-      <Image source={logoImg} style={styles.logoImg} />
+      <Image
+        source={require('../../assets/images/app-logo.png')}
+        style={styles.logoImg}
+      />
       <Text style={styles.welComeText}>Welcome to Kidz Play</Text>
       {loading ? (
         <>
