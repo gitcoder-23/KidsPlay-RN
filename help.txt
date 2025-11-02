@@ -1,0 +1,5 @@
+// Extra clis
+cd ios
+xcodebuild clean
+pod install
+cd ..

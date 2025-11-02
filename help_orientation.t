@@ -1,7 +1,14 @@
+// URL for react-native-orientation-locker
+
+
+https://github.com/wonday/react-native-orientation-locker
+https://stackoverflow.com/questions/67069672/react-native-orientation-is-not-working-locking-on-ios
+https://github.com/WrathChaos/react-native-portrait-locker-example
+
+
 
 // URL for Expo
 https://blog.logrocket.com/managing-orientation-changes-react-native-apps/
-
 🧩 Essence
 
 Use expo-screen-orientation (if using Expo) or react-native-orientation-locker (for bare React Native) to lock the orientation when navigating to the Dashboard.

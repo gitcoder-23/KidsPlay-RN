@@ -3,9 +3,6 @@ import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
 
-// Add this function to forward orientation control to OrientationLocker
-// import Orientation
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
@@ -34,12 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     return true
   }
-
-  // required for react-native-orientation-locker
-  func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-    return Orientation.getOrientation()
-  }
-
 }
 
 class ReactNativeDelegate: RCTDefaultReactNativeFactoryDelegate {
