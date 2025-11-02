@@ -58,8 +58,8 @@ const Welcome = ({ navigation }: WelcomeType) => {
             <Text>
               <MaterialIcons
                 name="arrow-circle-right"
-                color="#ff0000"
-                size={20}
+                size={50}
+                color="#ffffff"
               />
             </Text>
           </TouchableOpacity>
@@ -88,5 +88,6 @@ const styles = StyleSheet.create({
     marginTop: Height >= 700 ? '10%' : '3%',
     height: 220,
     width: 240,
+    marginBottom: '4%',
   },
 });
