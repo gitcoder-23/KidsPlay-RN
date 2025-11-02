@@ -13,7 +13,10 @@ const Dashboard = () => {
 
   return (
     <View style={styles.homeMainContainer}>
-      <Text>Welcome Kidz. This is your play zone!!</Text>
+      <Text>
+        Welcome Kidz. This is your play zone{' '}
+        <Text style={{ color: 'red', fontSize: 20 }}>Enjoy!!</Text>
+      </Text>
     </View>
   );
 };
