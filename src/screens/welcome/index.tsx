@@ -41,7 +41,7 @@ const Welcome = ({ navigation }: WelcomeType) => {
   return (
     <View style={styles.mainContainer}>
       <Image
-        source={require('../../assets/images/app-logo.png')}
+        source={require('../../assets/images/kidz_app_logo.png')}
         style={styles.logoImg}
       />
       <Text style={styles.welComeText}>Welcome to Kidz Play</Text>
