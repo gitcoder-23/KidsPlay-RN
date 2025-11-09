@@ -5,6 +5,8 @@ https://github.com/wonday/react-native-orientation-locker
 https://stackoverflow.com/questions/67069672/react-native-orientation-is-not-working-locking-on-ios
 https://github.com/WrathChaos/react-native-portrait-locker-example
 
+https://stackoverflow.com/questions/67069672/react-native-orientation-is-not-working-locking-on-ios
+
 In Xcode, with the KidzPlay target selected (as in your screenshot),
 go to Build Settings → scroll (or search) for
 “Objective-C Bridging Header” under Swift Compiler – General.
