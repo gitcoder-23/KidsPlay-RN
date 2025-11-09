@@ -1,0 +1,17 @@
+// Extra clis
+cd ios
+xcodebuild clean
+pod install
+cd ..
+
+
+// Android Studio gradle issue
+An error indicating "A problem occurred starting process 'command 'node''" during a Gradle sync in a React Native project is a frequent issue that can be resolved. This error, particularly when it mentions react-native-gesture-handler, points to the Gradle build process being unable to locate the Node.js executable.This problem often arises because Android Studio, when launched from a graphical user interface, may not inherit the PATH environment variable from your shell, which is where the location of the Node.js executable is defined.
+
+On macOS:
+1.Close Android Studio completely.
+2.Open your Terminal application.
+3.Execute the following command:
+open -a /Applications/Android\ Studio.app
+
+
